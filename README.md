@@ -31,7 +31,8 @@ ax = sns.countplot(x='Churn', data=dados_final)
 ![image](https://github.com/OtavioSotnas/Machine-Learning/assets/142911747/83f776ae-a122-4632-bcf2-9a672804f988)
 
 - **Over Sampling com SMOTE**
-Smote cria observações intermediárias entre os dados próximos
+  
+Ele cria observações intermediárias entre os dados próximos
 ```python
 from imblearn.over_sampling import SMOTE
 
