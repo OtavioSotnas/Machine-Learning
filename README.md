@@ -1,11 +1,11 @@
 ## ``Sumário``
 
-- [Modificando Variáveis Categóricas]()
-- [K-Nearest Kneighbors]()
-- [Bernoulli Naive Bayes]()
-- [DecisionTreeClassifier]()
+- [1. Modificando Variáveis Categóricas]()
+- [2. K-Nearest Kneighbors]()
+- [3. Bernoulli Naive Bayes]()
+- [4. DecisionTreeClassifier]()
 
-### ``Modificando Variáveis Categóricas``
+### ``1. Modificando Variáveis Categóricas``
 
 - **Manualmente**
 
