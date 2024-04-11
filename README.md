@@ -5,7 +5,7 @@
 - [3. Bernoulli Naive Bayes]()
 - [4. DecisionTreeClassifier]()
 
-Base de dados pode ser encontrado [aqui](https://www.kaggle.com/datasets/mnassrib/telecom-churn-datasets)
+Base de dados pode ser encontrado [aqui](https://www.kaggle.com/datasets/mnassrib/telecom-churn-datasets).
 
 ### ``1. Modificando Variáveis Categóricas``
 
