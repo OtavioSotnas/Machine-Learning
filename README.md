@@ -7,7 +7,7 @@
 
 ### ``Modificando Variáveis Categóricas``
 
-**Manualmente**
+- **Manualmente**
 
 ```python
 traducao_dic = {'Sim' : 1, 'Nao: 0}
@@ -15,7 +15,7 @@ traducao_dic = {'Sim' : 1, 'Nao: 0}
 dadosmodificados = dados.replace(traducao_dic)
 ```
 
-**Automatizada**
+- **Automatizada**
 
 ```python
 dadosmodificados = pd.get_dummies(dados, axis=1)
