@@ -3,6 +3,7 @@
 - [1. Primeiros Passos]()
   -   [1.1 Transformar valores categóricos em binários]()
   -   [1.2 Tratamento para dados desbalanceados]()
+    
 - [2. K-Nearest Kneighbors]()
 - [3. Bernoulli Naive Bayes]()
 - [4. Decision Tree Classifier]()
