@@ -1,9 +1,9 @@
 ## ``Sumário``
 
 - [1. Primeiros Passos]()
-- [2. Método K-Nearest Kneighbors]()
-- [3. Método Bernoulli Naive Bayes]()
-- [4. Método DecisionTreeClassifier]()
+- [2. K-Nearest Kneighbors]()
+- [3. Bernoulli Naive Bayes]()
+- [4. Decision Tree Classifier]()
 - [5. Validação dos modelos]()
 
 Base de dados pode ser encontrado [aqui](https://www.kaggle.com/datasets/mnassrib/telecom-churn-datasets).
