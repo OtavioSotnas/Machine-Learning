@@ -3,11 +3,10 @@
 - [1. Primeiros Passos]()
   - [1.1 Transformar valores categóricos em binários]()
   - [1.2 Tratamento para dados desbalanceados]()
+  - [1.3 Padronização dos Dados]()
+  - [1.4 Divisão em treino e teste]()
     
-- [2. K-Nearest Kneighbors]().
-  - **2.1 Padronizar Dados**
-  - **2.2 Implementando o modelo**
-  
+- [2. K-Nearest Kneighbors]().  
 - [3. Bernoulli Naive Bayes]()
 - [4. Decision Tree Classifier]()
 - [5. Validação dos modelos]()
