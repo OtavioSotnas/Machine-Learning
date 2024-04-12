@@ -1,6 +1,8 @@
 ## ``Sumário``
 
 - [1. Primeiros Passos]()
+-   [1.1 Transformar valores categóricos em binários]()
+-   [1.2 Tratamento para dados desbalanceados]()
 - [2. K-Nearest Kneighbors]()
 - [3. Bernoulli Naive Bayes]()
 - [4. Decision Tree Classifier]()
@@ -10,7 +12,7 @@ Base de dados pode ser encontrado [aqui](https://www.kaggle.com/datasets/mnassri
 
 ## ``1. Primeiros Passos``
 
-- **Transformar valores categóricos em binários:**
+- **1.1 Transformar valores categóricos em binários:**
 
 ```python
 # Manualmente
@@ -21,7 +23,7 @@ dados = dados.replace(traducao_dic)
 dados = pd.get_dummies(dados, axis=1)
 ```
 
-- **Tratamento para dados desbalanceados**
+- **1.2 Tratamento para dados desbalanceados**
 ```python
 ax = sns.countplot(x='Churn', data=dados_final)
 ```
