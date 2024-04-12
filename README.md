@@ -1,10 +1,13 @@
 ## ``Sumário``
 
 - [1. Primeiros Passos]()
-  -   [1.1 Transformar valores categóricos em binários]()
-  -   [1.2 Tratamento para dados desbalanceados]()
+  - [1.1 Transformar valores categóricos em binários]()
+  - [1.2 Tratamento para dados desbalanceados]()
     
-- [2. K-Nearest Kneighbors]()
+- [2. K-Nearest Kneighbors]().
+  - **2.1 Padronizar Dados**
+  - **2.2 Implementando o modelo**
+  
 - [3. Bernoulli Naive Bayes]()
 - [4. Decision Tree Classifier]()
 - [5. Validação dos modelos]()
@@ -49,10 +52,7 @@ ax = sns.countplot(x='Churn', data=dados)
 ```
 ![image](https://github.com/OtavioSotnas/Machine-Learning/assets/142911747/330a4e19-5af8-4317-a4c8-019809997d86)
 
-## ``2. K-Nearest Kneighbors``
-
-- **2.1 Padronizar Dados**
-
+- **1.3 Padronização dos Dados**
 ```python
 # Devemos deixar todos valores na mesma escala
 from sklearn.preprocessing import StandardScaler
@@ -61,7 +61,7 @@ norm = StandardScaler()
 X_normalizado = norm.fit_transform(X)
 ```
 
-- **2.2 Divisão dos Dados**
+- **1.4 Divisão em treino e teste**
 ```python
 # Biblioteca para divisão dos dados
 from sklearn.model_selection import train_test_split
@@ -69,7 +69,8 @@ from sklearn.model_selection import train_test_split
 X_treino, X_teste, y_treino, y_teste = train_test_split(X_normalizado, y, test_size=0.3, random_state=123)
 ```
 
-- **2.2 Implementando o modelo**
+## ``2. K-Nearest Kneighbors``
+![image](https://github.com/OtavioSotnas/Machine-Learning/assets/142911747/45437577-b5b6-4721-b6c8-c85b93d5c76a)
 
 ```python
 # Biblioteca para criarmos o modelo de machine learning
