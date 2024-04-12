@@ -9,7 +9,7 @@ Base de dados pode ser encontrado [aqui](https://www.kaggle.com/datasets/mnassri
 
 ## ``1. Primeiros Passos``
 
-- **Devemos transformar todos valores categóricos em binários:**
+- **Transformar valores categóricos em binários:**
 
 ```python
 # Manualmente
