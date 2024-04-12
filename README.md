@@ -30,7 +30,7 @@ ax = sns.countplot(x='Churn', data=dados_final)
 ```
 ![image](https://github.com/OtavioSotnas/Machine-Learning/assets/142911747/83f776ae-a122-4632-bcf2-9a672804f988)
 
-- **Over Sampling com SMOTE**
+**Over Sampling com SMOTE**
   
 ```python
 # Cria observações intermediárias entre os dados próximos
