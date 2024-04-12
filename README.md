@@ -48,3 +48,39 @@ dados = pd.concat([X, y], axis=1)
 ax = sns.countplot(x='Churn', data=dados)
 ```
 ![image](https://github.com/OtavioSotnas/Machine-Learning/assets/142911747/330a4e19-5af8-4317-a4c8-019809997d86)
+
+## ``2. K-Nearest Kneighbors``
+
+- **2.1 Padronizar Dados**
+
+```python
+# Devemos deixar todos valores na mesma escala
+from sklearn.preprocessing import StandardScaler
+
+norm = StandardScaler()
+X_normalizado = norm.fit_transform(X)
+```
+
+- **2.2 Divisão dos Dados**
+```python
+# Biblioteca para divisão dos dados
+from sklearn.model_selection import train_test_split
+
+X_treino, X_teste, y_treino, y_teste = train_test_split(X_normalizado, y, test_size=0.3, random_state=123)
+```
+
+- **2.2 Implementando o modelo**
+
+```python
+# Biblioteca para criarmos o modelo de machine learning
+from sklearn.neighbors import KNeighborsClassifier
+
+# Instanciar o modelo (criamos o modelo) - por padrão são 5 vizinhos  
+knn = KNeighborsClassifier(metric='euclidean')
+
+# Treinando o modelo com os dados de treino
+knn.fit(X_treino, y_treino)
+
+# Testando o modelo com os dados de teste
+predicao_knn = knn.predict(X_teste)
+```
