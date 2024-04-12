@@ -7,24 +7,20 @@
 
 Base de dados pode ser encontrado [aqui](https://www.kaggle.com/datasets/mnassrib/telecom-churn-datasets).
 
-## ``1. Modificando Variáveis Categóricas``
+## ``1. Primeiros Passos``
 
-- **Manualmente**
+- **Devemos transformar todos valores categóricos em binários:**
 
 ```python
+# Manualmente
 traducao_dic = {'Sim' : 1, 'Nao: 0}
-
 dados = dados.replace(traducao_dic)
-```
 
-- **Automatizada**
-
-```python
+# Automatizado
 dados = pd.get_dummies(dados, axis=1)
 ```
-### 1.2 Balanceando dados
 
-- **Verificando balanceamento dos dados**
+- **Tratamento para dados desbalanceados**
 ```python
 ax = sns.countplot(x='Churn', data=dados_final)
 ```
@@ -32,23 +28,19 @@ ax = sns.countplot(x='Churn', data=dados_final)
 
 - **Over Sampling com SMOTE**
   
-Ele cria observações intermediárias entre os dados próximos
 ```python
+# Cria observações intermediárias entre os dados próximos
 from imblearn.over_sampling import SMOTE
 
-#dividindo os dados em caracteristicas e target
+# Dividindo os dados em caracteristicas e target
 X = dados.drop('Churn', axis = 1)
 y = dados['Churn']
 
 smt = SMOTE(random_state=123)
 X, y = smt.fit_resample(X, y)
 
-#junção dos dados balanceados
+# Junção dos dados balanceados
 dados = pd.concat([X, y], axis=1)
-```
-
-- **Verificando novamente**
-```python
 ax = sns.countplot(x='Churn', data=dados)
 ```
 ![image](https://github.com/OtavioSotnas/Machine-Learning/assets/142911747/330a4e19-5af8-4317-a4c8-019809997d86)
